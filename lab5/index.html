@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №5</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Шапка сайту (hero) -->
+  <header id="hero_container">
+    <div class="hero-inner">
+      <div class="hero-brand">
+        <span class="logo-circle">LP</span>
+        <div class="hero-text">
+          <p class="hero-subtitle">Національний університет</p>
+          <h1 class="hero-title">«Львівська політехніка»</h1>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Головне меню">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="https://lpnu.ua/" target="_blank" rel="noopener">Сайт ЛПНУ</a></li>
+          <li><a href="#news">Про роботу</a></li>
+          <li><a href="#news">Новини</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container" id="news">
+      <div class="section-heading">
+        <p class="eyebrow">Новини університету</p>
+        <h2>Актуальні події Львівської політехніки</h2>
+        <p class="section-description">
+          Структура секції відтворена за мотивами блоку <code>div.main-container</code> з сайту
+          університету, а для імітації карток використано CSS Grid та медіа-запити.
+        </p>
+      </div>
+
+      <div class="news-grid" role="list">
+        <article class="news-card" role="listitem">
+          <span class="news-tag">Конференція</span>
+          <p class="news-date"><time datetime="2025-10-12">12 жовтня 2025</time></p>
+          <h3>Міжнародний форум з інженерії та ІТ</h3>
+          <p class="news-summary">
+            Науковці та представники індустрії з 14 країн обговорили тренди штучного інтелекту та
+            кібербезпеки у стінах ЛПНУ.
+          </p>
+          <a class="news-link" href="https://lpnu.ua" target="_blank" rel="noopener">Докладніше →</a>
+        </article>
+
+        <article class="news-card" role="listitem">
+          <span class="news-tag">Освіта</span>
+          <p class="news-date"><time datetime="2025-10-05">5 жовтня 2025</time></p>
+          <h3>Старт школи молодого дослідника</h3>
+          <p class="news-summary">
+            Для першокурсників відкрили менторську програму, яка допомагає будувати власні наукові
+            проєкти з перших місяців навчання.
+          </p>
+          <a class="news-link" href="https://lpnu.ua" target="_blank" rel="noopener">Докладніше →</a>
+        </article>
+
+        <article class="news-card" role="listitem">
+          <span class="news-tag">Подія</span>
+          <p class="news-date"><time datetime="2025-09-28">28 вересня 2025</time></p>
+          <h3>Хакатон Smart Campus</h3>
+          <p class="news-summary">
+            Студентські команди створили прототипи сервісів для цифровізації кампусу, використовуючи
+            відкриті дані університету.
+          </p>
+          <a class="news-link" href="https://lpnu.ua" target="_blank" rel="noopener">Докладніше →</a>
+        </article>
+
+        <article class="news-card" role="listitem">
+          <span class="news-tag">Досягнення</span>
+          <p class="news-date"><time datetime="2025-09-18">18 вересня 2025</time></p>
+          <h3>Команда PolyTech Robotics здобула гран-прі</h3>
+          <p class="news-summary">
+            Розробка автономного рятувального дрона отримала найвищу відзнаку European Robotics
+            Challenge 2025.
+          </p>
+          <a class="news-link" href="https://lpnu.ua" target="_blank" rel="noopener">Докладніше →</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025. Лабораторна робота №5. Виконав: студент групи ____.</p>
+  </footer>
+</body>
+</html>
