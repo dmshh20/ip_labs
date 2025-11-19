@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №8 — Функції та замикання</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111c34;
+      --accent: #7c3aed;
+      --accent-light: #c084fc;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      background: radial-gradient(circle at top, #1e1b4b, #020617 55%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 32px 20px;
+      border-bottom: 1px solid rgba(124, 58, 237, 0.3);
+    }
+
+    .header-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(124, 58, 237, 0.2);
+      border: 1px solid rgba(124, 58, 237, 0.4);
+      font-weight: 600;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      background: rgba(124, 58, 237, 0.35);
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 36px auto 60px;
+      padding: 0 20px;
+      display: grid;
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 26px;
+      box-shadow: 0 25px 60px rgba(2, 6, 23, 0.45);
+      border: 1px solid rgba(124, 58, 237, 0.18);
+    }
+
+    .pill {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      background: rgba(124, 58, 237, 0.18);
+    }
+
+    pre {
+      margin-top: 12px;
+      background: #020617;
+      border-radius: 14px;
+      padding: 16px;
+      overflow-x: auto;
+      font-family: "JetBrains Mono", Consolas, monospace;
+      font-size: 0.9rem;
+      color: #e2e8f0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 28px 12px 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div>
+        <div class="pill">Лабораторна робота №8</div>
+        <h1>Функції, вирази, замикання та робота з Set</h1>
+      </div>
+      <nav aria-label="Головне меню">
+        <ul>
+          <li><a href="../index.html">⬅ На головну</a></li>
+          <li><a href="js/main.js">JS код</a></li>
+          <li><a href="https://lpnu.ua/" target="_blank" rel="noopener">lpnu.ua</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="pill">Варіант 1 (непарні номери)</div>
+      <p>
+        Скрипт <code>lab8/js/main.js</code> містить класичні функції, функціональні вирази, стрілкові та рекурсивні
+        приклади, замикання та застосування колбеків до множини <code>Set</code>. Для тесту відкрийте DevTools → Console
+        та викликайте методи об’єкта <code>lab8</code>.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="pill">Запуск прикладів</div>
+      <pre>
+console.log(lab8.calculateSum(10));
+console.log(lab8.multiply(3, 7));
+console.log(lab8.power(2, 5));
+console.log(lab8.harmonicSeries(5));
+const triple = lab8.createMultiplier(3);
+console.log(triple(9));
+console.log(lab8.applyFunction(4, lab8.double));
+lab8.processSet(new Set([1, 2, 3]), (x) => x * 10);
+      </pre>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025. Лабораторна робота №8. Вебтехнології та вебдизайн.
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+
