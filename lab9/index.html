@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №9</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+
+    .note {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-left: 4px solid #007bff;
+      background: #e9f3ff;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .variant-info {
+      margin-bottom: 15px;
+      padding: 10px 12px;
+      border-radius: 4px;
+      background: #f0f0f0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Лабораторна робота №9</h1>
+    <p>Об'єктне програмування в JavaScript, прототипне наслідування</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Інструкція</h2>
+      <div class="variant-info">
+        <p><strong>Варіант 1</strong> – “Система управління курсами”.</p>
+        <p><strong>Варіант 2</strong> – “Онлайн-магазин”.</p>
+        <p>Обидві моделі реалізовано в `main.js`. Для перевірки відкрийте консоль розробника (F12) та перегляньте вивід.</p>
+      </div>
+      <p>Скрипт автоматично створює тестові об'єкти та демонструє роботу методів.</p>
+      <div class="note">
+        Відкрийте цю сторінку у браузері, відкрийте <strong>Developer tools → Console</strong> 
+        і перегляньте повідомлення, які генерує код з файлу <code>main.js</code>.
+      </div>
+    </section>
+
+    <section>
+      <h2>Демонстрація в консолі</h2>
+      <p>Зверніть увагу на наступні створені об'єкти та виклики методів:</p>
+      <ul>
+        <li><strong>Варіант 1</strong>: <code>course1</code>, <code>course2</code>, <code>teacher1</code>, <code>student1</code>, <code>student2</code>.</li>
+        <li><strong>Варіант 2</strong>: <code>product1</code>, <code>product2</code>, <code>order1</code>, <code>customer1</code>.</li>
+      </ul>
+      <p>Ви можете повторно викликати методи напряму з консолі, наприклад:</p>
+      <pre>
+// Приклади для перевірки у консолі:
+student1.viewCourses();
+teacher1.listCourses();
+customer1.viewOrders();</pre>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
