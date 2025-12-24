@@ -1,0 +1,27 @@
+{
+  "name": "city-times-app",
+  "version": "1.0.0",
+  "description": "Application to display current time in different cities",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "style-loader": "^3.3.3",
+    "css-loader": "^6.8.1",
+    "sass-loader": "^13.3.2",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.0"
+  }
+}
+
